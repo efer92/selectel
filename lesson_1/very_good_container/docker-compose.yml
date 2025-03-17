@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  very-good-container:
+    build: .
+    container_name: very-good-container
+
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    cap_add:
+      - CHOWN
+      - NET_BIND_SERVICE  # < 1024
+
+    read_only: true
+    tmpfs:
+      - /tmp

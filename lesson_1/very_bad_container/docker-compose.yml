@@ -1,0 +1,7 @@
+version: '3.8'
+
+services:
+  very-bad-container:
+    build: .
+    container_name: very-bad-container
+    privileged: true
