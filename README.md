@@ -107,8 +107,7 @@ Hadolint
 ```
 docker run --rm -i hadolint/hadolint < Dockerfile
 ```
-
-Lesson 4
+Урок 4
 Falco
 ```
 curl -fsSL https://falco.org/repo/falcosecurity-packages.asc | \
